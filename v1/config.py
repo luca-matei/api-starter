@@ -2,7 +2,11 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
+    redis_host: str = "localhost"
+    redis_port: int = 6379
+
     class Config:
         env_prefix = ".env"
+
 
 settings = Settings()
