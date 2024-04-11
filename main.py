@@ -2,8 +2,6 @@ import uvicorn
 
 from fastapi import FastAPI
 
-from v1.clients.redis import RedisSession
-
 app = FastAPI()
 
 
